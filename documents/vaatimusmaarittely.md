@@ -26,6 +26,6 @@ Perusversioon lisättäviä toiminnallisuuksia
 - Mahdollisuus ratkaista sudoku tietokoneen avulla.
 - Mahdollisuus valita eri kokoisia sudokuja.
 - Mahdollisuus valita sudoku vaikeustason mukaan skaalalla 1-3
-Lisää toiminnallisuuksia tulee kehityksen edistyessä...
+- Lisää toiminnallisuuksia tulee kehityksen edistyessä...
 
 
