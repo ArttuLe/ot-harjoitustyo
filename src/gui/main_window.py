@@ -72,7 +72,7 @@ class MainWindow(QMainWindow, Ui_Sudoku):
         for i in range(grid.count()):
             item = grid.itemAt(i)
             if type(item) == QWidgetItem:
-                print("Index: {} Value: {}".format(i, item.widget().text()))
+                print("Position: {} Value: {}".format(i, item.widget().text()))
 
 
 
