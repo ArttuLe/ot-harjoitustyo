@@ -1,3 +1,5 @@
+![GitHub Actions](https://github.com/ArttuLe/ot-harjoitustyo/workflows/CI/badge.svg)
+
 # Ohjelmistotekniikka, Harjoitustyö
 
 ## Weekly assignments
