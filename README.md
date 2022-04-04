@@ -20,3 +20,10 @@
 ### [Architechture](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/ApplicationArchitechture.md)
 
 ### [Test Documentation](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/TestDocument.md)
+
+## Misc.
+
+The sudoku data is obtained from a Kaggle dataset containing 3 million sudoku puzzles.
+The application has 30000 of these puzzles in use.
+
+[The dataset](https://www.kaggle.com/datasets/radcliffe/3-million-sudoku-puzzles-with-ratings?resource=download)
