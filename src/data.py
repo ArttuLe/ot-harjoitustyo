@@ -23,7 +23,7 @@ class Data():
                 found = True
 
         sudoku = self.str_to_int(sudoku)
-        sudoku = sudoku.reshape(9,9)
+        #sudoku = sudoku.reshape(9,9)
 
         return sudoku
 

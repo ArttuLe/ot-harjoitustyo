@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>918</width>
     <height>600</height>
    </rect>
   </property>
@@ -17,10 +17,23 @@
    <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="set_difficulty">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>480</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Choose difficulty</string>
+    </property>
+   </widget>
    <widget class="QPushButton" name="open_sudoku">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>300</x>
       <y>480</y>
       <width>201</width>
       <height>51</height>
@@ -28,19 +41,6 @@
     </property>
     <property name="text">
      <string>Open a sudoku</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="check_sudoku">
-    <property name="geometry">
-     <rect>
-      <x>440</x>
-      <y>480</y>
-      <width>201</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Check</string>
     </property>
    </widget>
    <widget class="QWidget" name="gridLayoutWidget">
@@ -79,13 +79,84 @@
      <string>Sudoku</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="check_sudoku">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>480</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Check the sudoku</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="diff_label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Difficulty: Choose</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="status_label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Status: Start a sudoku</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="help_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Help</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>918</width>
      <height>22</height>
     </rect>
    </property>
