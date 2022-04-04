@@ -1,4 +1,4 @@
-# Tuntiraportointi
+# Hour report
 
 
 Date       | time | target |
