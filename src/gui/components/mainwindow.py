@@ -83,5 +83,6 @@ class Ui_Sudoku(object):
         self.label.setText(_translate("Sudoku", "Sudoku"))
         self.check_sudoku.setText(_translate("Sudoku", "Check the sudoku"))
         self.diff_label.setText(_translate("Sudoku", "Difficulty: Choose"))
-        self.status_label.setText(_translate("Sudoku", "Status: Start a sudoku"))
+        self.status_label.setText(_translate(
+            "Sudoku", "Status: Start a sudoku"))
         self.help_button.setText(_translate("Sudoku", "Help"))

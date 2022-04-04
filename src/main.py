@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import QApplication
 
 from gui.main_window import MainWindow
 
+
 def main():
     """
     Main function to start application
@@ -12,6 +13,7 @@ def main():
     mainwindow = MainWindow()
     mainwindow.show()
     app.exec_()
+
 
 if __name__ == "__main__":
     main()
