@@ -1,22 +1,22 @@
 # Ohjelmistotekniikka, Harjoitustyö
 
-## Tehtävät
+## Weekly assignments
 
-### Viikko 1
+### Week 1
 
-### Viikko 2
+### Week 2
 
-### Viikko 3
+### Week 3
 
 
-## Dokumentaatio
+## Documentation
 
-### [Tuntikirjanpito](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/tuntikirjanpito.md)
+### [Hour reporting](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/Hours.md)
 
-### [Vaatimusmäärittely](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/vaatimusmaarittely.md)
+### [Project Definition](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/ProjectDefinition.md)
 
-### [Käyttö-ohje](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/kaytto-ohje.md)
+### [User Guide](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/UserGuide.md)
 
-### [Arkkitehtuurikuvaus](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/arkkitehtuurikuvaus.md)
+### [Architechture](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/ApplicationArchitechture.md)
 
-### [Testausdokumentti](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/testausdokumentti.md)
+### [Test Documentation](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/TestDocument.md)
