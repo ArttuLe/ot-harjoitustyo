@@ -36,7 +36,9 @@ class MainWindow(QMainWindow, Ui_Sudoku):
         self.help_button.clicked.connect(self.help)
 
     def ask_difficulty(self):
-
+        """
+        Ask user to input the difficulty of the sudoku
+        """
         text, ok_ = QInputDialog.getText(
             self, 'Difficulty', 'Input difficulty of the sudoku 1-8?')
         if ok_:
@@ -44,7 +46,10 @@ class MainWindow(QMainWindow, Ui_Sudoku):
             self.diff_label.setText("Difficulty: {}".format(self.difficulty))
 
     def open_a_sudoku(self,):
-        self.status("Solving a sudoku")
+        """
+        Opens a sudoku with the difficulty chosen
+        """
+        self.status("Status: Solving a sudoku")
         sudoku_grid = self.sudoku.open_sudoku(int(self.difficulty))
 
         for i in range(self.grid.count()):
@@ -53,6 +58,9 @@ class MainWindow(QMainWindow, Ui_Sudoku):
                 item.widget().setText(str(sudoku_grid[i]))
 
     def check(self):
+        """
+        Checks if the solved sudoku is correct
+        """
         sudoku_to_check = []
 
         for i in range(self.grid.count()):
@@ -63,7 +71,7 @@ class MainWindow(QMainWindow, Ui_Sudoku):
         solved = self.sudoku.check_sudoku(sudoku_to_check)
 
         if solved:
-            self.status("Sudoku solved!")
+            self.status("Status: Sudoku solved!")
             msg = QMessageBox()
             msg.setWindowTitle("Sudoku solved")
             msg.setText("Well done! You have correctly solved the sudoku")
@@ -78,6 +86,9 @@ class MainWindow(QMainWindow, Ui_Sudoku):
             temp= msg2.exec()
 
     def help(self):
+        """
+        Help button
+        """
         msg = QMessageBox()
         msg.setWindowTitle("Help")
         msg.setText(
@@ -86,10 +97,15 @@ class MainWindow(QMainWindow, Ui_Sudoku):
         temp = msg.exec()
 
     def status(self, status):
+        """
+        Set status on the UI
+        """
         self.status_label.setText(status)
 
     def init_grid(self, grid_layout):
-
+        """
+        Initialize the sudoku grid on the UI
+        """
         for i in range(1, 10):
             for j in range(1, 10):
                 i_j = QLineEdit(str(0))

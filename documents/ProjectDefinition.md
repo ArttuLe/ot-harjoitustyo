@@ -25,7 +25,7 @@ Further development of the application
 - The user can create sudokus to solve in addition to using sudokus provided.
 - The ability to solve sudoku's using an algorithm.
 - The ability to choose different sized sudoku's to solve.
-- User can choose the difficulty of the sudoku on range 1-8.
+- User can choose the difficulty of the sudoku on range 1-8. - Done
 - More to come...
 
 

@@ -36,8 +36,8 @@ class Sudoku():
         return sudoku
 
     def check_3x3_grid(self, sudoku, location):
-        y = location[0]  # pylint: disable=invalid-name
-        x = location[1]  # pylint: disable=invalid-name
+        y = location[0]
+        x = location[1]
         nums = set()
         print("location: ", location)
 

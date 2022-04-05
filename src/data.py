@@ -7,8 +7,13 @@ import math
 class Data():
 
     def __init__(self,):
-        self.data = pd.read_csv('resources/sudoku.csv')
-        self.data = self.data.to_numpy()
+        self.data = self.read_data()
+
+    def read_data(self):
+        data = pd.read_csv('resources/sudoku.csv')
+        data = data.to_numpy()
+
+        return data
 
     def load_sudoku(self, difficulty):
 
@@ -21,7 +26,6 @@ class Data():
                 found = True
 
         sudoku = self.str_to_int(sudoku)
-        #sudoku = sudoku.reshape(9,9)
 
         return sudoku
 
@@ -31,4 +35,6 @@ class Data():
             if data[i] == '.':
                 data[i] = '0'
 
-        return np.array(data, dtype=int)
+        data = list(map(int, data))
+        
+        return data

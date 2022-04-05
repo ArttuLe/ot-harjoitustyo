@@ -1,4 +1,5 @@
 ![GitHub Actions](https://github.com/ArttuLe/ot-harjoitustyo/workflows/CI/badge.svg)
+[![codecov](https://codecov.io/gh/ArttuLe/ot-harjoitustyo/branch/master/graph/badge.svg?token=qjFDb0OLRG)](https://codecov.io/gh/ArttuLe/ot-harjoitustyo)
 
 # Ohjelmistotekniikka, Harjoitustyö
 
@@ -14,6 +15,8 @@
 ## Documentation
 
 ### [Hour reporting](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/Hours.md)
+
+### [ChangeLog](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/ChangeLog.md)
 
 ### [Project Definition](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/ProjectDefinition.md)
 
