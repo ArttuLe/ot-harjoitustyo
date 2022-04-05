@@ -2,6 +2,7 @@ import numpy as np
 import unittest
 from data import Data
 
+
 class TestData(unittest.TestCase):
 
     def test_str_to_int(self):

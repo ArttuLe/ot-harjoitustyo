@@ -36,5 +36,5 @@ class Data():
                 data[i] = '0'
 
         data = list(map(int, data))
-        
+
         return data

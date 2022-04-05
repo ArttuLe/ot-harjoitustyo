@@ -53,3 +53,9 @@ def coverage_report(c):
     """
     c.run("coverage html", pty=True)
 
+@task
+def format(c):
+    """
+    Auto-format code using autopep8
+    """
+    c.run("autopep8 --in-place --recursive src", pty=True)

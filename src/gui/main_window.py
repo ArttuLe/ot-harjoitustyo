@@ -83,7 +83,7 @@ class MainWindow(QMainWindow, Ui_Sudoku):
             msg2.setWindowTitle("Sudoku Incorrect")
             msg2.setText("The sudoku is not correct :( please try again...")
             msg2.setIcon(QMessageBox.Critical)
-            temp= msg2.exec()
+            temp = msg2.exec()
 
     def help(self):
         """
