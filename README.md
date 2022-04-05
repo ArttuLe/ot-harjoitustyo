@@ -3,15 +3,6 @@
 
 # Ohjelmistotekniikka, Harjoitustyö
 
-## Weekly assignments
-
-### Week 1
-
-### Week 2
-
-### Week 3
-
-
 ## Documentation
 
 ### [Hour reporting](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/Hours.md)

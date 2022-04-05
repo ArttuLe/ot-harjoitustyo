@@ -18,6 +18,8 @@ The sketch above is for the minimum working version of the product and does not 
 
 The minimum working version of the product allows the user to choose a sudoku, solve it and then check if the solved sudoku is correct.
 
+UPDATE: The minimum working version is done.
+
 ### Further development
 
 Further development of the application
