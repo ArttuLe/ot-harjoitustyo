@@ -2,11 +2,6 @@
 
 # User Guide
 
-## Sudoku data
-
-In order to run the application the user must first extract the sudokus.zip folder into the resources folder in order to have the sudokus available.
-
-
 ## Install dependencies
 
 User must install all the required dependencies for the program to run.
@@ -19,7 +14,7 @@ poetry install
 
 ## Running the program
 
-After having extracted the data and installed the dependencies, the program can be started with a command
+After having installed the dependencies, the program can be started with a command
 
 ```sh
 poetry run invoke start
@@ -27,6 +22,32 @@ poetry run invoke start
 
 ## Running tests
 
+```sh
+poetry run invoke test
+```
 
 ## Running pylint
 
+```sh
+poetry run invoke lint
+```
+
+## Generating test coverage and coverage-report
+
+Test coverage
+
+```sh
+poetry run invoke coverage
+```
+
+Coverage report
+
+```sh
+poetry run invoke coverage-report
+```
+
+## Running auto-formatting on the code
+
+```sh
+poetry run invoke format
+```
