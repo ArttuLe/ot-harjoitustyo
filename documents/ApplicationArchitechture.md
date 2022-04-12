@@ -2,13 +2,4 @@
 
 # Architechture of the application
 
-## UML etc.
-
-
-
-## Graphical User Interface
-
-
-## Sudoku logic
-
-## Data
+![](./photos/class_diagram.png)

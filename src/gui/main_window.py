@@ -39,6 +39,7 @@ class MainWindow(QMainWindow, Ui_Sudoku):
         """
         Ask user to input the difficulty of the sudoku
         """
+
         text, ok_ = QInputDialog.getText(
             self, 'Difficulty', 'Input difficulty of the sudoku 1-8?')
         if ok_:

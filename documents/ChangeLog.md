@@ -10,7 +10,7 @@ Log for the changes made to the application during the course.
 
 
 ## Week 4
-
+- No real changes to the application due to being sick with corona, and haven't been able to do much work.
 
 ## Week 5
 
