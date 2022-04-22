@@ -41,11 +41,3 @@ class Sudoku():
             sudoku = sudoku.flatten()
 
         return sudoku
-
-
-asd = Sudoku()
-
-input = asd.open_sudoku(0)
-
-ret = asd.solve(input)
-print(ret)
