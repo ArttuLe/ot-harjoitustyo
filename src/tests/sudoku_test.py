@@ -20,22 +20,18 @@ class TestSudoku(unittest.TestCase):
 
         self.sudoku = Sudoku()
 
-    def test_check_row(self):
+    def test_open_sudoku(self):
 
-        row = 0
+        ret_value = self.sudoku.open_sudoku(difficulty=0)
 
-        self.assertTrue(self.sudoku.check_row(row, self.grid))
+        self.assertFalse(self.sudoku.check_sudoku(ret_value))
 
-        self.grid[0][3] = 1
+    def test_check_sudoku(self):
 
-        self.assertFalse(self.sudoku.check_row(row, self.grid))
+        self.assertTrue(self.sudoku.check_sudoku(self.grid))
 
-    def test_check_column(self):
+    def test_check_sudoku_false(self):
 
-        column = 0
+        self.grid[3][8] = 2
 
-        self.assertTrue(self.sudoku.check_column(column, self.grid))
-
-        self.grid[2][0] = 1
-
-        self.assertFalse(self.sudoku.check_column(column, self.grid))
+        self.assertFalse(self.sudoku.check_sudoku(self.grid))

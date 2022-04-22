@@ -1,11 +1,13 @@
 import numpy as np
 from data import Data
 
+from utilities import Utilities
+
 
 class Sudoku():
 
     def __init__(self):
-
+        self.utils = Utilities()
         self.data = Data()
 
     def check_sudoku(self, sudoku):
@@ -14,15 +16,14 @@ class Sudoku():
         locations = [(0, 0), (0, 3), (0, 6), (3, 0), (3, 3),
                      (3, 6), (6, 0), (6, 3), (6, 6)]
         for loc in locations:
-            if self.check_3x3_grid(sudoku, loc) is False:
+            if self.utils.check_3x3_grid_gui(sudoku, loc) is False:
                 return not_solved
 
         for k in range(9):
-            if self.check_column(k, sudoku) is False:
+            if self.utils.check_column_gui(k, sudoku) is False:
                 return not_solved
-            if self.check_row(k, sudoku) is False:
+            if self.utils.check_row_gui(k, sudoku) is False:
                 return not_solved
-
         return True
 
     def open_sudoku(self, difficulty):
@@ -30,37 +31,21 @@ class Sudoku():
 
         return sudoku
 
-    def check_3x3_grid(self, sudoku, location):
-        y_coord = location[0]
-        x_coord = location[1]
-        nums = set()
-        print("location: ", location)
+    def solve(self, sudoku):
 
-        for i in range(0, 3):
-            for j in range(0, 3):
-                nums.add(sudoku[y_coord+i][x_coord+j])
+        sudoku = np.reshape(np.array(sudoku), (9, 9))
+        print(sudoku)
+        sudoku = self.utils.solver(sudoku)
+        print(sudoku)
+        if sudoku is not None:
+            sudoku = sudoku.flatten()
 
-        if len(nums) != 9:
-            return False
-        return True
+        return sudoku
 
-    def check_row(self, row, sudoku):
-        nums = set()
 
-        for i in range(9):
-            nums.add(sudoku[row][i])
+asd = Sudoku()
 
-        if len(nums) != 9:
-            return False
-        return True
+input = asd.open_sudoku(0)
 
-    def check_column(self, column, sudoku):
-
-        nums = set()
-
-        for i in range(9):
-            nums.add(sudoku[i][column])
-
-        if len(nums) != 9:
-            return False
-        return True
+ret = asd.solve(input)
+print(ret)

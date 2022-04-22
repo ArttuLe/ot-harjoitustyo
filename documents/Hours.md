@@ -10,4 +10,7 @@ Date       | time | target |
 2022-04-04 | 3h   | Käyttöliittymää; Sudoku logiikka |
 2022-04-05 | 3h   | Invoke tasks; Tests |
 2022-04-12 | 3h   | Tests;Docs |
-Total | 21h   | |
+2022-04-22 | 6h   | Tests;Sudoku solving algorithm |
+2022-04-23 | -h   |  |
+2022-04-24 | -h   |  |
+Total | 27h   | |
