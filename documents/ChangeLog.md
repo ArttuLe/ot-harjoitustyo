@@ -14,6 +14,9 @@ Log for the changes made to the application during the course.
 
 ## Week 5
 
+- Minor redesign of the user interface.
+- Implemented the sudoku solving algorithm.
+
 ## Week 6
 
 ## Week 7

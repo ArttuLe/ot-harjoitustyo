@@ -45,6 +45,7 @@ class MainWindow(QMainWindow, Ui_Sudoku):
             item = self.grid.itemAt(i)
             if isinstance(item, QWidgetItem):
                 item.widget().setText(str(solved[i]))
+        self.status("Status: Solved!")
 
     def ask_difficulty(self):
         """
@@ -61,7 +62,7 @@ class MainWindow(QMainWindow, Ui_Sudoku):
         """
         Opens a sudoku with the difficulty chosen
         """
-        self.status("Status: Solving a sudoku")
+        self.status("Status: Solve!")
         self.sudoku_grid = self.sudoku.open_sudoku(int(self.difficulty))
 
         for i in range(self.grid.count()):

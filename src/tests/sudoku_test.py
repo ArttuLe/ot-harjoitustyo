@@ -32,6 +32,14 @@ class TestSudoku(unittest.TestCase):
 
     def test_check_sudoku_false(self):
 
-        self.grid[3][8] = 2
+        self.grid[3][8] = 17
 
         self.assertFalse(self.sudoku.check_sudoku(self.grid))
+
+    def test_solve(self):
+
+        sudoku = self.sudoku.open_sudoku(0)
+
+        sudoku = self.sudoku.solve(sudoku)
+
+        self.assertTrue(self.sudoku.check_sudoku(sudoku))

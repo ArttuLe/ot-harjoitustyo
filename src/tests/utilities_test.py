@@ -7,7 +7,7 @@ class TestUtilities(unittest.TestCase):
 
     def setUp(self):
         """
-        Init a completed sudoku.utils for testing purposes
+        Init a completed sudoku for testing
         """
         self.grid = [[1, 3, 9, 5, 7, 6, 8, 4, 2],
                      [2, 5, 8, 4, 9, 3, 1, 6, 7],
@@ -30,7 +30,7 @@ class TestUtilities(unittest.TestCase):
     def test_check_row_gui_false(self):
 
         row = 0
-        self.grid[0][3] = 1
+        self.grid[0][3] = 20
         self.assertFalse(self.sudoku.utils.check_row_gui(row, self.grid))
 
     def test_check_column_gui(self):
@@ -41,7 +41,7 @@ class TestUtilities(unittest.TestCase):
 
     def test_check_column_gui_false(self):
         column = 0
-        self.grid[2][0] = 1
+        self.grid[2][0] = 13
 
         self.assertFalse(self.sudoku.utils.check_column_gui(column, self.grid))
 
@@ -53,3 +53,25 @@ class TestUtilities(unittest.TestCase):
         for loc in locations:
             self.assertTrue(
                 self.sudoku.utils.check_3x3_grid_gui(self.grid, loc))
+
+    def test_valid_num(self):
+
+        self.grid[5][3] = 0
+
+        loc = self.sudoku.utils.find_empty_cell(self.grid)
+
+        self.assertTrue(self.sudoku.utils.valid_num(self.grid, 7, loc))
+
+    def test_find_empty_cell(self):
+
+        self.grid[3][8] = 0
+
+        empty = self.sudoku.utils.find_empty_cell(self.grid)
+
+        self.assertEqual(empty, (3, 8))
+
+    def test_find_empty_cell_none(self):
+
+        empty = self.sudoku.utils.find_empty_cell(self.grid)
+
+        self.assertIsNone(empty)

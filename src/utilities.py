@@ -9,11 +9,13 @@ class Utilities():
                     return (i, j)
         return None
 
-    def valid_num_solver(self, sudoku, num, loc):
+    def valid_num(self, sudoku, num, loc):
 
         for i in range(9):
             if sudoku[loc[0]][i] == num:
                 return False
+
+        for i in range(9):
             if sudoku[i][loc[1]] == num:
                 return False
 
@@ -66,14 +68,13 @@ class Utilities():
     def solver(self, sudoku):
 
         loc = self.find_empty_cell(sudoku)
-        print(loc)
         if loc is None:
-            return sudoku
+            return True
 
         for num in range(1, 10):
-            if self.valid_num_solver(sudoku, num, loc) is True:
+            if self.valid_num(sudoku, num, loc):
                 sudoku[loc[0]][loc[1]] = num
-                self.solver(sudoku)
-            else:
+                if self.solver(sudoku):
+                    return True
                 sudoku[loc[0]][loc[1]] = 0
         return None

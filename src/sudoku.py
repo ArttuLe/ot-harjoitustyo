@@ -34,10 +34,8 @@ class Sudoku():
     def solve(self, sudoku):
 
         sudoku = np.reshape(np.array(sudoku), (9, 9))
-        print(sudoku)
-        sudoku = self.utils.solver(sudoku)
-        print(sudoku)
+        self.utils.solver(sudoku)
+
         if sudoku is not None:
             sudoku = sudoku.flatten()
-
         return sudoku
