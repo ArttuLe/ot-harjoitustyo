@@ -11,6 +11,6 @@ Date       | time | target |
 2022-04-05 | 3h   | Invoke tasks; Tests |
 2022-04-12 | 3h   | Tests;Docs |
 2022-04-22 | 6h   | Tests;Sudoku solving algorithm; minor UI redesign|
-2022-04-23 | 2h   | Tests; Finished sudoku solving algorithm|
-2022-04-24 | -h   |  |
-Total | 29h   | |
+2022-04-23 | 4h   | Tests; Finished sudoku solving algorithm|
+2022-04-24 | 2h   | Docs |
+Total | 33h   | |
