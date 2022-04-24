@@ -24,4 +24,16 @@ sequenceDiagram
 
 ### Solving and checking the sudoku
 
+```mermaid
+sequenceDiagram
+  actor User
+  participant UI
+  participant Sudoku
+  participant Utilities
+  User->>UI: Clicks "check a sudoku"
+  UI->>Sudoku: check()
+  Sudoku->> Utilities: check_sudoku(sudoku)
+  Utilities-->> Sudoku: sudoku
+  Sudoku-->> UI: sudoku
+```
 

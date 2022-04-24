@@ -20,34 +20,3 @@ After having installed the dependencies, the program can be started with a comma
 poetry run invoke start
 ```
 
-## Running tests
-
-```sh
-poetry run invoke test
-```
-
-## Running pylint
-
-```sh
-poetry run invoke lint
-```
-
-## Generating test coverage and coverage-report
-
-Test coverage
-
-```sh
-poetry run invoke coverage
-```
-
-Coverage report
-
-```sh
-poetry run invoke coverage-report
-```
-
-## Running auto-formatting on the code
-
-```sh
-poetry run invoke format
-```

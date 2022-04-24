@@ -3,6 +3,12 @@
 
 # Ohjelmistotekniikka, Harjoitustyö
 
+## Sudoku
+
+The program is a sudoku game, which allows the user to play sudoku and solve them independently or by using the programs solver.
+
+### [Latest release](https://github.com/ArttuLe/ot-harjoitustyo/releases/tag/viikko5)
+
 ## Documentation
 
 ### [Hour reporting](https://github.com/ArttuLe/ot-harjoitustyo/blob/master/documents/Hours.md)
