@@ -4,18 +4,33 @@ import pandas as pd
 
 
 class Data():
-
+    """Class for dealing with the sudoku data
+    """    
     def __init__(self,):
+        """Constructor which reads the sudokus from a csv file.
+        """        
         self.data = self.read_data()
 
     def read_data(self):
+        """Read the sudokus off of csv file
+
+        Returns:
+            numpy array: sudoku data
+        """        
         data = pd.read_csv('resources/sudoku.csv')
         data = data.to_numpy()
 
         return data
 
     def load_sudoku(self, difficulty):
+        """loads a sudoku off of the data with desired difficulty
 
+        Args:
+            difficulty (int): desired difficulty
+
+        Returns:
+            list: sudoku in a list format for the UI
+        """
         found = False
 
         while not found:
@@ -29,6 +44,11 @@ class Data():
         return sudoku
 
     def str_to_int(self, data):
+        """Converts the sudoku from a list of chars to ints.
+
+        Returns:
+            list(int): sudoku in a list format
+        """        
         data = list(data)
         for i in range(len(data)):
             if data[i] == '.':

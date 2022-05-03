@@ -39,13 +39,22 @@ class MainWindow(QMainWindow, Ui_Sudoku):
 
     def solve(self):
         self.status("Status: Solving...")
-        solved = self.sudoku.solve(self.sudoku_grid)
+        try:
+            solved = self.sudoku.solve(self.sudoku_grid)
 
-        for i in range(self.grid.count()):
-            item = self.grid.itemAt(i)
-            if isinstance(item, QWidgetItem):
-                item.widget().setText(str(solved[i]))
-        self.status("Status: Solved!")
+            for i in range(self.grid.count()):
+                item = self.grid.itemAt(i)
+                if isinstance(item, QWidgetItem):
+                    item.widget().setText(str(solved[i]))
+            self.status("Status: Solved!")
+
+        except(AttributeError):
+            self.status("Status: Open a sudoku")
+            msg2 = QMessageBox()
+            msg2.setWindowTitle("Sudoku Error")
+            msg2.setText("There was no sudoku to solve, please open a sudoku and try again")
+            msg2.setIcon(QMessageBox.Critical)
+            temp = msg2.exec()
 
     def ask_difficulty(self):
         """

@@ -1,8 +1,16 @@
 
 class Utilities():
-
+    """Class for all the utility functions for the sudoku game
+    """
     def find_empty_cell(self, sudoku):
+        """Checks the sudoku for an empty cell where a number can be placed
 
+        Args:
+            sudoku (2d array): The sudoku in a 9x9 grid form
+
+        Returns:
+            tuple: location of the empty cell in the grid if there is one, otherwise None
+        """
         for i in range(9):
             for j in range(9):
                 if sudoku[i][j] == 0:
@@ -10,7 +18,16 @@ class Utilities():
         return None
 
     def valid_num(self, sudoku, num, loc):
+        """Checks if a number can be placed in the location given
 
+        Args:
+            sudoku (2d array): _description_
+            num (int): The number to be tested for validity
+            loc (tuple(int)): desired location for the number to be placed
+
+        Returns:
+            boolean: True if the number can be placed in the location
+        """
         for i in range(9):
             if sudoku[loc[0]][i] == num:
                 return False
@@ -29,6 +46,15 @@ class Utilities():
         return True
 
     def check_3x3_grid_gui(self, sudoku, location):
+        """Checks a 3x3 sub-grid of a sudoku for duplicate numbers
+
+        Args:
+            sudoku (2d array): sudoku grid
+            location (tuple(int)): location from where the check begins, and which grid to check
+
+        Returns:
+            boolean: True if no duplicates ie. grid is valid
+        """        
         y_coord = location[0]
         x_coord = location[1]
         nums = set()
@@ -43,6 +69,15 @@ class Utilities():
         return True
 
     def check_row_gui(self, row, sudoku):
+        """Checks the row of the complete sudoku for duplicate numbers.
+
+        Args:
+            row (int): row index
+            sudoku (2d array): sudoku grid
+
+        Returns:
+            boolean: True if no duplicates found on the row
+        """        
         nums = set()
 
         for i in range(9):
@@ -54,7 +89,15 @@ class Utilities():
         return True
 
     def check_column_gui(self, column, sudoku):
+        """Checks the column of the complete sudoku for duplicates
 
+        Args:
+            column (int): column index
+            sudoku (2d array): sudoku grid
+
+        Returns:
+            boolean: True if no duplicates
+        """
         nums = set()
 
         for i in range(9):
@@ -66,7 +109,14 @@ class Utilities():
         return True
 
     def solver(self, sudoku):
+        """Recursive solver function for the application to solve the sudoku automatically
 
+        Args:
+            sudoku (2d array): sudoku
+
+        Returns:
+            boolean: True if sudoku is solved,  None if not solvable
+        """
         loc = self.find_empty_cell(sudoku)
         if loc is None:
             return True

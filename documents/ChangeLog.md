@@ -18,5 +18,7 @@ Log for the changes made to the application during the course.
 - Implemented the sudoku solving algorithm.
 
 ## Week 6
+- No new features implemented.
+- Mainly documentation due to time restrictions.
 
 ## Week 7

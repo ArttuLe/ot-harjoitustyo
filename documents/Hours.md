@@ -13,4 +13,5 @@ Date       | time | target |
 2022-04-22 | 6h   | Tests;Sudoku solving algorithm; minor UI redesign|
 2022-04-23 | 4h   | Tests; Finished sudoku solving algorithm|
 2022-04-24 | 2h   | Docs |
-Total | 33h   | |
+2022-05-03 | 2h   | Docs |
+Total | 35h   | |

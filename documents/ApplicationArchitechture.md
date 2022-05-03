@@ -2,10 +2,15 @@
 
 # Architechture of the application
 
+
+## Structure of the application
+
 ![](./photos/class_diagram.png)
 
+## Logic of the program
 
-## Core funtionalities described as sequence diagrams
+
+## Core functionalities described as sequence diagrams
 
 ### Opening a sudoku to solve
 
