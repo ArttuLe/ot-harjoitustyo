@@ -5,10 +5,11 @@ import pandas as pd
 
 class Data():
     """Class for dealing with the sudoku data
-    """    
+    """
+
     def __init__(self,):
         """Constructor which reads the sudokus from a csv file.
-        """        
+        """
         self.data = self.read_data()
 
     def read_data(self):
@@ -16,7 +17,7 @@ class Data():
 
         Returns:
             numpy array: sudoku data
-        """        
+        """
         data = pd.read_csv('resources/sudoku.csv')
         data = data.to_numpy()
 
@@ -48,7 +49,7 @@ class Data():
 
         Returns:
             list(int): sudoku in a list format
-        """        
+        """
         data = list(data)
         for i in range(len(data)):
             if data[i] == '.':

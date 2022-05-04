@@ -2,6 +2,7 @@
 class Utilities():
     """Class for all the utility functions for the sudoku game
     """
+
     def find_empty_cell(self, sudoku):
         """Checks the sudoku for an empty cell where a number can be placed
 
@@ -54,7 +55,7 @@ class Utilities():
 
         Returns:
             boolean: True if no duplicates ie. grid is valid
-        """        
+        """
         y_coord = location[0]
         x_coord = location[1]
         nums = set()
@@ -77,7 +78,7 @@ class Utilities():
 
         Returns:
             boolean: True if no duplicates found on the row
-        """        
+        """
         nums = set()
 
         for i in range(9):

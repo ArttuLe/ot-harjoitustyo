@@ -6,11 +6,11 @@ from utilities import Utilities
 
 class Sudoku():
     """Class responsible for the sudoku game
-    """    
+    """
 
     def __init__(self):
         """Constructor for the class
-        """        
+        """
         self.utils = Utilities()
         self.data = Data()
 
@@ -22,7 +22,7 @@ class Sudoku():
 
         Returns:
             boolean: True or False depending on if the sudoku is correctly solved
-        """        
+        """
         sudoku = np.reshape(np.array(sudoku), (9, 9))
         locations = [(0, 0), (0, 3), (0, 6), (3, 0), (3, 3),
                      (3, 6), (6, 0), (6, 3), (6, 6)]
@@ -45,7 +45,7 @@ class Sudoku():
 
         Returns:
             list: a sudoku with the desired difficulty
-        """                
+        """
         sudoku = self.data.load_sudoku(difficulty)
 
         return sudoku

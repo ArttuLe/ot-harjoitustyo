@@ -52,7 +52,8 @@ class MainWindow(QMainWindow, Ui_Sudoku):
             self.status("Status: Open a sudoku")
             msg2 = QMessageBox()
             msg2.setWindowTitle("Sudoku Error")
-            msg2.setText("There was no sudoku to solve, please open a sudoku and try again")
+            msg2.setText(
+                "There was no sudoku to solve, please open a sudoku and try again")
             msg2.setIcon(QMessageBox.Critical)
             temp = msg2.exec()
 
