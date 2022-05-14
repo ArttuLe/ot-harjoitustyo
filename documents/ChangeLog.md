@@ -22,3 +22,6 @@ Log for the changes made to the application during the course.
 - Mainly documentation due to time restrictions.
 
 ## Week 7
+
+- Course wrapup.
+- Project release version.

@@ -14,4 +14,5 @@ Date       | time | target |
 2022-04-23 | 4h   | Tests; Finished sudoku solving algorithm|
 2022-04-24 | 2h   | Docs |
 2022-05-03 | 2h   | Docs |
-Total | 35h   | |
+2022-05-14 | 3h   | Finishing up the project.|
+Total | 38h   | |

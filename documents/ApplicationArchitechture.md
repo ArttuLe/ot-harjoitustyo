@@ -9,6 +9,25 @@
 
 ## Logic of the program
 
+The logic of the application is handled by the Sudoku and Utilities classes.
+
+```mermaid
+ classDiagram
+      Sudoku "*" --> "1" Utilities
+      class Utilities{
+        solver
+        check_row
+        check_grid
+      }
+      class Sudoku{
+          check_sudoku
+          open_sudoku
+          solve 
+      }
+```
+
+
+
 
 ## Core functionalities described as sequence diagrams
 
@@ -42,3 +61,7 @@ sequenceDiagram
   Sudoku-->> UI: sudoku
 ```
 
+## Data used in the application
+
+Sudokus are loaded into the application from a CSV-file containing unsolved sudokus.
+Dataset obtained from kaggle.com and a link to the complete data is found on the README.

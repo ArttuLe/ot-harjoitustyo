@@ -2,29 +2,41 @@
 
 ## Sudoku
 
-The aim for this application is to allow users to play sudoku.
+The aim for this application is to allow users to play sudoku and use the application as a sudoku solver if need be.
 
 ## User Interface
 
 Graphical user interface of the application.
 
 ![](./photos/UI_updated.png)
-Current version of the User interface
+User Interface
 
 ## The Application
 
-### Minimum working product
+### Functionalities provided by the application
 
-The minimum working version of the product allows the user to choose a sudoku, solve it and then check if the solved sudoku is correct.
+## Selecting and opening a sudoku
 
-UPDATE: The minimum working version is done.
+- Before solving the sudoku, the user must open a sudoku by first providing the desired difficulty for the sudoku.
+- After providing the difficulty, the user can open a sudoku and start solving it.
 
-### Further development
 
-Further development of the application
+## Solving the sudoku
 
-- The user can create sudokus to solve in addition to using sudokus provided.
-- The ability to solve sudokus using an algorithm. - Done
-- User can choose the difficulty of the sudoku on range 1-8. - Done
+### Manual solving
+- The user has two choices when it comes to solving the sudokus.
+- First one is to solve the sudokus manually by filling all the 0's with correct values
+
+### Using the solver provided
+- Second choice is to use the solver provided in the application to automatically solve the sudokus.
+- User can solver using the solver and then check if the solver provided a correct solution.
+
+## Checking the sudoku for correctness
+
+- After the user has chosen one of the methods for solving the sudoku,
+ user can check that the solution to the sudoku was correct.
+ 
+
+
 
 
